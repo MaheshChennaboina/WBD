@@ -5,10 +5,10 @@ import { Navbar, Nav, Container } from 'react-bootstrap'
 const Header = () => {
     return (
         <header>
-            <Navbar bg="dark" variant='dark' expand="lg" collapseOnSelect>
+            <Navbar bg="dark"  variant='dark' expand="lg" collapseOnSelect>
   <Container>
     <LinkContainer to='/'>
-    <Navbar.Brand> NATURES BASKET </Navbar.Brand>
+    <Navbar.Brand><i class="fa fa-shopping-basket" aria-hidden="true"></i> NATURES BASKET </Navbar.Brand>
     </LinkContainer>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
