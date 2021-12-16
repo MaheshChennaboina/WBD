@@ -40,7 +40,7 @@ const products = [
     image: '/images/CARROT.jfif',
     description: <div>Product of : INDIA. <br /> A classic carrot cake with a dash of cinnamon and walnuts is a decadent treat</div>,
     category: 'Vegetables',
-    price: 399.99,
+    price: 39.99,
     countInStock: 50,
     rating: 5,
     numReviews: 12,
@@ -90,7 +90,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '8',
+    _id: '9',
     name: 'Cucumber Green - 250 g',
     image: '/images/CUCUMBER.jfif',
     description: <div> Product of : INDIA. <br/>  Cucumbers are a respite to long, hot days. Made mostly out of water, they are refreshing.</div>,
@@ -101,7 +101,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '9',
+    _id: '10',
     name: 'CURRY LEAF 50 G NB - 1 Pc',
     image: '/images/CURRY LEAF.jpg',
     description: <div>Product of : INDIA</div>,
@@ -112,7 +112,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '10',
+    _id: '11',
     name: 'Drum Stick - 150g',
     image: '/images/DRUMSTICK.jpg',
     description: <div> Product of : INDIA.<br/> Drumsticks are a popular vegetable in India. They’re green, long, slender, and extremely fibrous.</div>,
@@ -123,7 +123,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '11',
+    _id: '12',
     name: 'Fenugreek/Methi - 200 g',
     image: '/images/FENUGREEK.jfif',
     description: <div> Product of : INDIA.<br />Fenugreek leaves are important herbs in the Indian cuisine. They are loved for their bitterness. <br />Some very common food items in the Indian cuisine would be incomplete without fenugreek leaves. Imagine what it would be like not to have known thepla, methi ki sabzi, and methi ka paratha? Fenugreek has a bitter taste.<br />#Good source of iron, potassium, calcium, selenium, copper, zinc, manganese, and magnesium <br/> #Rich in vitamins A, B6, and C<br /></div>,
@@ -134,7 +134,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '12',
+    _id: '13',
     name: 'Garlic - 100 g',
     image: '/images/GARLIC.jfif',
     description: <div> Product of : INDIA.<br /> Garlic is an essential part of global cuisines. It has a distinct flavour and multiple medicinal qualities.<br/>Garlic is an onion species with a very distinct flavour and an overwhelming aroma. It is equally used for culinary and medicinal purposes. Garlic can be stir fried, ground or grated before adding to main courses, etc.<br/>#Good source of manganese, copper, calcium, selenium, and phosphorus<br/>#Rich in vitamins B1, B6, and C</div>,
@@ -145,7 +145,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '13',
+    _id: '14',
     name: 'Green Capsicum - Organic - 250 g',
     image: '/images/GREEN CAPSICUM.jpg',
     description: <div> Product of : INDIA.</div>,
@@ -156,7 +156,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '14',
+    _id: '15',
     name: 'GREEN Green Peas - 1 kg',
     image: '/images/GREEN PEAS.jfif',
     description: <div>Product of : INDIA.<br/> Sweet, delicious, and cutely round, green peas are also called garden peas.<br/>Green peas are among those vegetables that used to be cultivated in ancient times, are known for their juicy, nutritious, and green coloured seeds. Every pea pod has a number of seeds that are used as food.<br/>#Good source of magnesium, sodium, potassium, and dietary fiber<br/>#Rich in vitamins A, B6, and C<br/></div>,
@@ -167,7 +167,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '15',
+    _id: '16',
     name: 'Lady Finger/Bhendi - 250 g',
     image: '/images/LADY FINGER.jfif',
     description:<div>Product of : INDIA.<br/> Bhindi Fry is an easy snack that can be savored as a starter or a side dish</div>,
@@ -178,7 +178,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '16',
+    _id: '17',
     name: 'Lemon - 100 g',
     image: '/images/LEMON.jfif',
     description: <div>Product of : INDIA.<br/> Add abundant flavor to a variety of dishes with a simple drizzle of lemon</div>,
@@ -189,7 +189,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '17',
+    _id: '18',
     name: 'Onion - 1 kg',
     image: '/images/ONIONS.jpg',
     description: <div>Product of : INDIA.<br/> Add sage and cheddar to make an extra special and delicious onion soup </div>,
@@ -200,7 +200,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '18',
+    _id: '19',
     name: 'Pointed Gourd/Tondli - 250 g',
     image: '/images/POINTED GOURD.jpg',
     description: <div> Product of : INDIA.<br/> Served as a main or side dish, fried ivy gourd is a popular Indian recipe</div>,
@@ -211,7 +211,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '19',
+    _id: '20',
     name: 'Potato - 500 g',
     image: '/images/potato.jfif',
     description:<div>Product of : INDIA.<br/>Potato is a popular and important ingredient in every imaginable cuisine. It is loved globally.<br/>People of all regions and culinary tastes love potatoes. They have a thin skin that covers the hard flesh. It's eaten with or without its peel. It can be consumed as a roast, a mash, in fried form, etc.<br/>#Good source of potassium, copper, manganese, phosphorus, niacin, dietary fiber, and pantothenic acid<br/>#Rich in vitamins B6 and C </div>,
@@ -222,7 +222,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '20',
+    _id: '21',
     name: 'Sweet Potato - 1 kg',
     image: '/images/Sweet Potato.jfif',
     description:<div>Product of : INDIA.<br/> Regardless of the season, sweet potatoes are yummy and easy to experiment with</div>,
@@ -233,7 +233,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '21',
+    _id: '22',
     name: 'Ridge Gourd/ Turai - 250 g',
     image: '/images/Ridge Gourd.jfif',
     description:<div>Product of : INDIA.<br/> Ridge gourd is a popular gourd vegetable. It is used in multiple Indian cuisines in a variety of ways.<br/>Ridge gourd, a popular gourd vegetable, is usually cooked in various Indian cuisines. It is cooked with a lot of additional flavours, since it lacks a strong flavour of its own. It is eaten for its nutritional values.<br/>#Good source of niacin, iron, phosphorus, calcium, iodine, and fluorine<br/>#Rich in vitamins A, B2, and C<br/>#Excellent for people with diabetes<br/></div>,
@@ -244,7 +244,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '22',
+    _id: '23',
     name: 'Tomato - 1 kg',
     image: '/images/TOMATOES.jpg',
     description:<div>Product of : INDIA.<br/> Stuff tomatoes with some mixed veggies and crumbled panner and enjoy them grilled</div>,
