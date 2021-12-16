@@ -4,10 +4,10 @@ import { Container } from 'react-bootstrap'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import HomeScreen from './screens/HomeScreen'
-import LoginScreen from "./screens/LoginScreen";
+//import LoginScreen from "./screens/LoginScreen";
 import ProductScreen from './screens/ProductScreen'
-import SignUp from "./screens/SignUp";
-import CartItem from "./cart/CartItem";
+////import SignUp from "./screens/SignUp";
+//import CartItem from "./cart/CartItem";
 
 const App = () => {
   return (
@@ -17,9 +17,6 @@ const App = () => {
       <Container>
         <Route path='/' component={HomeScreen} exact />
         <Route path='/product/:id' component={ProductScreen} />
-        <Route path='/cart' component={CartItem}></Route>
-        <Route path='/login' component={LoginScreen} />
-        <Route path='/signup' component={SignUp}/>
       </Container>
     </main>
     <Footer />
