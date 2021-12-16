@@ -3,14 +3,35 @@ import { Link } from 'react-router-dom'
 import { Row, Col, Image, ListGroup, Card, Button, Form } from 'react-bootstrap'
 import Rating from '../components/Rating'
 import products from '../products'
+import axios from "axios"
 
-const ProductScreen = ({ history, match }) => {
-    const [qty, setQty] = useState(0)
+const ProductScreen = ({ history, match,props }) => {
+    const [qty, setQty] = useState(1)
+    const[count,setCount] = useState(1)
+    const [cart,setCart]  = useState([{}])
+    const [message,setMessage]=useState()
    const product = products.find(p => p._id === match.params.id)
 
    const addToCartHandler = () => {
        history.push(`/cart/${match.params.id}?qty=${qty}`)
+
    }
+const cartHandler = (e)=>{
+    e.preventDefault();
+    setCount(count+1)
+    const product_obj = {
+         'id':product._id,
+         "product":product.name,
+         "price":product.price,
+         "count":qty,
+    }
+    const url = 'http://localhost:3002/products'
+    axios.post(url,product_obj)
+    .then((response)=>{
+        setMessage("sucessfully added to cart....")
+    })
+}
+
     return (
         <>
             <Link className='btn btn-dark my-3' to='/'><i class="fas fa-long-arrow-alt-left"></i> Go Back</Link>
@@ -80,7 +101,7 @@ const ProductScreen = ({ history, match }) => {
 
                             <ListGroup.Item>
                                 <Button 
-                                onClick={addToCartHandler}
+                                 onClick={cartHandler} onChange={addToCartHandler} 
                                 className='btn-block' type='button' disabled={product.countInStock ===0}>
                                    <i class="fas fa-cart-plus"></i> Add To Cart
                                 </Button>
