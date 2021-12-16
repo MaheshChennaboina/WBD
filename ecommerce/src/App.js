@@ -14,8 +14,13 @@ const App = () => {
     <Header />
     <main>
       <Container>
+//         <Route path='/' component={HomeScreen} exact />
+//         <Route path='/product/:id' component={ProductScreen} />
         <Route path='/' component={HomeScreen} exact />
         <Route path='/product/:id' component={ProductScreen} />
+//         <Route path='/cart' component={CartItem}></Route>
+        <Route path='/login' component={LoginScreen} />
+        <Route path='/signup' component={SignUp}/>
 
       </Container>
     </main>
