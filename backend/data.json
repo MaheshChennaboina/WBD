@@ -1,3 +1,10 @@
 {
-  "products": []
+  "products": [
+    {
+      "id": "6",
+      "product": "Cluster Beans/ Gawar - 250 g",
+      "price": 39.75,
+      "count": "45"
+    }
+  ]
 }
