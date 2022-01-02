@@ -1,0 +1,22 @@
+{
+  "name": "fsd-project",
+  "version": "1.0.0",
+  "description": "Online grocery store",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daradeepak/FSD-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daradeepak/FSD-Project/issues"
+  },
+  "homepage": "https://github.com/daradeepak/FSD-Project#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
