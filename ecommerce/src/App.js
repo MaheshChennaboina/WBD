@@ -7,7 +7,6 @@ import HomeScreen from './screens/HomeScreen'
 import LoginScreen from "./screens/LoginScreen";
 import ProductScreen from './screens/ProductScreen'
 import SignUp from "./screens/SignUp";
-import CartItem from "./cart/CartItem";
 import CartScreen from "./screens/CartScreen";
 
 const App = () => {
@@ -18,7 +17,7 @@ const App = () => {
       <Container>
         <Route path='/' component={HomeScreen} exact />
         <Route path='/product/:id' component={ProductScreen} />
-        <Route path='/cart' component={CartItem}></Route>
+        <Route path='/cart/:id?' component={CartScreen}></Route>
         <Route path='/login' component={LoginScreen} />
         <Route path='/signup' component={SignUp}/>
       </Container>
@@ -29,3 +28,4 @@ const App = () => {
 }
 
 export default App;
+
