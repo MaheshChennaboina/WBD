@@ -15,7 +15,7 @@ const products = [
   {
     _id: '2',
     name: 'Bitter Gourd/Karela - 250 g',
-    image: '/images/BITTER GOURD.jfif',
+    image: '/images/BITTER_GOURD.jfif',
     description: <div>Product of : INDIA.<br /> Though bitter, Karela has a lasting taste that can transform into a delicacy if used well</div>,
     category: 'Vegetables',
     price: 22.25,
@@ -26,7 +26,7 @@ const products = [
   {
     _id: '3',
     name: 'Bottle Gourd/Dudhi - 250 g',
-    image: '/images/BOTTLE GOURD.jpg',
+    image: '/images/BOTTLE_GOURD.jpg',
     description: <div>Product of : INDIA. <br /> Try a healthy, detox bottle gourd juice with mint and coriander leaves </div>,
     category: 'Vegetables',
     price: 21.25,
@@ -59,7 +59,7 @@ const products = [
   {
     _id: '6',
     name: 'Cluster Beans/ Gawar - 250 g',
-    image: '/images/CLUSTER BEANS.jpg',
+    image: '/images/CLUSTER_BEANS.jpg',
     description: <div> Product of : INDIA. <br/>Get these protein and fibre-rich beans back on your menu now!</div>,
     category: 'Vegetables',
     price: 39.75,
@@ -103,7 +103,7 @@ const products = [
   {
     _id: '10',
     name: 'CURRY LEAF 50 G NB - 1 Pc',
-    image: '/images/CURRY LEAF.jpg',
+    image: '/images/CURRY_LEAF.jpg',
     description: <div>Product of : INDIA</div>,
     category: 'Vegetables',
     price: 15,
@@ -147,7 +147,7 @@ const products = [
   {
     _id: '14',
     name: 'Green Capsicum - Organic - 250 g',
-    image: '/images/GREEN CAPSICUM.jpg',
+    image: '/images/GREEN_CAPSICUM.jpg',
     description: <div> Product of : INDIA.</div>,
     category: 'Vegetables',
     price: 42.25,
@@ -158,7 +158,7 @@ const products = [
   {
     _id: '15',
     name: 'GREEN Green Peas - 1 kg',
-    image: '/images/GREEN PEAS.jfif',
+    image: '/images/GREEN_PEAS.jfif',
     description: <div>Product of : INDIA.<br/> Sweet, delicious, and cutely round, green peas are also called garden peas.<br/>Green peas are among those vegetables that used to be cultivated in ancient times, are known for their juicy, nutritious, and green coloured seeds. Every pea pod has a number of seeds that are used as food.<br/>#Good source of magnesium, sodium, potassium, and dietary fiber<br/>#Rich in vitamins A, B6, and C<br/></div>,
     category: 'Vegetables',
     price: 150,
@@ -169,7 +169,7 @@ const products = [
   {
     _id: '16',
     name: 'Lady Finger/Bhendi - 250 g',
-    image: '/images/LADY FINGER.jfif',
+    image: '/images/LADY_FINGER.jfif',
     description:<div>Product of : INDIA.<br/> Bhindi Fry is an easy snack that can be savored as a starter or a side dish</div>,
     category: 'Vegetables',
     price: 31.25,
@@ -202,7 +202,7 @@ const products = [
   {
     _id: '19',
     name: 'Pointed Gourd/Tondli - 250 g',
-    image: '/images/POINTED GOURD.jpg',
+    image: '/images/POINTED_GOURD.jpg',
     description: <div> Product of : INDIA.<br/> Served as a main or side dish, fried ivy gourd is a popular Indian recipe</div>,
     category: 'Vegetables',
     price: 32.25,
@@ -224,7 +224,7 @@ const products = [
   {
     _id: '21',
     name: 'Sweet Potato - 1 kg',
-    image: '/images/Sweet Potato.jfif',
+    image: '/images/Sweet_Potato.jfif',
     description:<div>Product of : INDIA.<br/> Regardless of the season, sweet potatoes are yummy and easy to experiment with</div>,
     category: 'Vegetables',
     price: 109,
@@ -235,7 +235,7 @@ const products = [
   {
     _id: '22',
     name: 'Ridge Gourd/ Turai - 250 g',
-    image: '/images/Ridge Gourd.jfif',
+    image: '/images/Ridge_Gourd.jfif',
     description:<div>Product of : INDIA.<br/> Ridge gourd is a popular gourd vegetable. It is used in multiple Indian cuisines in a variety of ways.<br/>Ridge gourd, a popular gourd vegetable, is usually cooked in various Indian cuisines. It is cooked with a lot of additional flavours, since it lacks a strong flavour of its own. It is eaten for its nutritional values.<br/>#Good source of niacin, iron, phosphorus, calcium, iodine, and fluorine<br/>#Rich in vitamins A, B2, and C<br/>#Excellent for people with diabetes<br/></div>,
     category: 'Vegetables',
     price: 31.35,
