@@ -12,7 +12,7 @@ const reducer = combineReducers({
     cart:cartReducer,
     userLogin: userLoginReducer,
     userRegister: userRegisterReducer,
-    userReducer: userDetailsReducer,
+    userDetails: userDetailsReducer,
     userUpdateProfile: userUpdateProfileReducer,
     orderCreate: orderCreateReducer,
     orderDetails: orderDetailsReducer,
