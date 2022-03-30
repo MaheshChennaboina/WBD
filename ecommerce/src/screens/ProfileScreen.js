@@ -5,9 +5,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import { getUserDetails, updateUserProfile } from '../actions/userActions'
-import { USER_UPDATE_PROFILE_RESET } from '../constants/userConstants'
 import { listMyOrders } from '../actions/orderActions'
-// import { USER_UPDATE_PROFILE_RESET } from '../constants/userConstants'
+import { USER_UPDATE_PROFILE_RESET } from '../constants/userConstants'
 
 const ProfileScreen = ({ location, history }) => {
   const [name, setName] = useState('')
@@ -30,6 +29,20 @@ const ProfileScreen = ({ location, history }) => {
   const orderListMy = useSelector((state) => state.orderListMy)
   const { loading: loadingOrders, error: errorOrders, orders } = orderListMy
 
+  // useEffect(() => {
+  //   if (!userInfo) {
+  //     history.push('/login')
+  //   } else {
+  //     if (!user || !user.name || success) {
+  //       dispatch({ type: USER_UPDATE_PROFILE_RESET })
+  //       dispatch(getUserDetails('profile'))
+  //       dispatch(listMyOrders())
+  //     } else {
+  //       setName(user.name)
+  //       setEmail(user.email)
+  //     }
+  //   }
+  // }, [dispatch, history, userInfo, user, success])
   useEffect(() => {
     if (!userInfo) {
       history.push('/login')
@@ -43,8 +56,7 @@ const ProfileScreen = ({ location, history }) => {
         setEmail(user.email)
       }
     }
-  }, [dispatch, history, userInfo, user, success])
-
+  },[dispatch, history, userInfo, user, success])
   const submitHandler = (e) => {
     e.preventDefault()
     if (password !== confirmPassword) {
@@ -169,3 +181,4 @@ const ProfileScreen = ({ location, history }) => {
 }
 
 export default ProfileScreen
+
