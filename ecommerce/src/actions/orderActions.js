@@ -20,7 +20,11 @@ import {
   ORDER_DELIVER_SUCCESS,
   ORDER_DELIVER_REQUEST,
 } from '../constants/orderConstants'
+<<<<<<< HEAD
  import { logout } from './userActions'
+=======
+import { logout } from './userActions'
+>>>>>>> 35ebf2384241c0d07b3ba1fe77fee5753036fc54
 
 export const createOrder = (order) => async (dispatch, getState) => {
   try {

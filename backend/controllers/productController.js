@@ -5,6 +5,12 @@ import Product from '../models/productModel.js'
 // @route   GET /api/products
 // @access  Public
 const getProducts = asyncHandler(async (req, res) => {
+<<<<<<< HEAD
+=======
+  const pageSize = 10
+  const page = Number(req.query.pageNumber) || 1
+
+>>>>>>> 35ebf2384241c0d07b3ba1fe77fee5753036fc54
   const keyword = req.query.keyword
     ? {
         name: {
@@ -13,10 +19,20 @@ const getProducts = asyncHandler(async (req, res) => {
         },
       }
     : {}
+<<<<<<< HEAD
 const products = await Product.find({...keyword})
 
 
 res.json(products)
+=======
+
+  const count = await Product.countDocuments({ ...keyword })
+  const products = await Product.find({ ...keyword })
+    .limit(pageSize)
+    .skip(pageSize * (page - 1))
+
+  res.json({ products, page, pages: Math.ceil(count / pageSize) })
+>>>>>>> 35ebf2384241c0d07b3ba1fe77fee5753036fc54
 })
 
 // @desc    Fetch single product
@@ -57,6 +73,10 @@ const createProduct = asyncHandler(async (req, res) => {
     price: 0,
     user: req.user._id,
     image: '/images/sample.jpg',
+<<<<<<< HEAD
+=======
+    brand: 'Sample brand',
+>>>>>>> 35ebf2384241c0d07b3ba1fe77fee5753036fc54
     category: 'Sample category',
     countInStock: 0,
     numReviews: 0,
@@ -67,15 +87,25 @@ const createProduct = asyncHandler(async (req, res) => {
   res.status(201).json(createdProduct)
 })
 
+<<<<<<< HEAD
 // // @desc    Update a product
 // // @route   PUT /api/products/:id
 // // @access  Private/Admin
+=======
+// @desc    Update a product
+// @route   PUT /api/products/:id
+// @access  Private/Admin
+>>>>>>> 35ebf2384241c0d07b3ba1fe77fee5753036fc54
 const updateProduct = asyncHandler(async (req, res) => {
   const {
     name,
     price,
     description,
     image,
+<<<<<<< HEAD
+=======
+    brand,
+>>>>>>> 35ebf2384241c0d07b3ba1fe77fee5753036fc54
     category,
     countInStock,
   } = req.body
@@ -87,6 +117,10 @@ const updateProduct = asyncHandler(async (req, res) => {
     product.price = price
     product.description = description
     product.image = image
+<<<<<<< HEAD
+=======
+    product.brand = brand
+>>>>>>> 35ebf2384241c0d07b3ba1fe77fee5753036fc54
     product.category = category
     product.countInStock = countInStock
 
@@ -98,9 +132,15 @@ const updateProduct = asyncHandler(async (req, res) => {
   }
 })
 
+<<<<<<< HEAD
 // // @desc    Create new review
 // // @route   POST /api/products/:id/reviews
 // // @access  Private
+=======
+// @desc    Create new review
+// @route   POST /api/products/:id/reviews
+// @access  Private
+>>>>>>> 35ebf2384241c0d07b3ba1fe77fee5753036fc54
 const createProductReview = asyncHandler(async (req, res) => {
   const { rating, comment } = req.body
 
@@ -148,11 +188,15 @@ const getTopProducts = asyncHandler(async (req, res) => {
   res.json(products)
 })
 
- export {
+export {
   getProducts,
   getProductById,
   deleteProduct,
   createProduct,
   updateProduct,
   createProductReview,
+<<<<<<< HEAD
+=======
+  getTopProducts,
+>>>>>>> 35ebf2384241c0d07b3ba1fe77fee5753036fc54
 }

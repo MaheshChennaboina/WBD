@@ -21,11 +21,18 @@ import {
     USER_DELETE_REQUEST,
     USER_DELETE_SUCCESS,
     USER_DELETE_FAIL,
+<<<<<<< HEAD
     // USER_UPDATE_RESET,
     // USER_UPDATE_REQUEST,
     // USER_UPDATE_SUCCESS,
     // USER_UPDATE_FAIL,
     // USER_UPDATE_PROFILE_RESET,
+=======
+    USER_UPDATE_RESET,
+    USER_UPDATE_REQUEST,
+    USER_UPDATE_SUCCESS,
+    USER_UPDATE_FAIL,
+>>>>>>> 35ebf2384241c0d07b3ba1fe77fee5753036fc54
   } from '../constants/userConstants'
   
   export const userLoginReducer = (state = {}, action) => {
