@@ -5,22 +5,16 @@ import Product from '../models/productModel.js'
 // @route   GET /api/products
 // @access  Public
 const getProducts = asyncHandler(async (req, res) => {
-//   const pageSize = 10
-//   const page = Number(req.query.pageNumber) || 1
+  const keyword = req.query.keyword
+    ? {
+        name: {
+          $regex: req.query.keyword,
+          $options: 'i',
+        },
+      }
+    : {}
+const products = await Product.find({...keyword})
 
-//   const keyword = req.query.keyword
-//     ? {
-//         name: {
-//           $regex: req.query.keyword,
-//           $options: 'i',
-//         },
-//       }
-//     : {}
-
-//   const count = await Product.countDocuments({ ...keyword })
-const products = await Product.find({  })
-//     .limit(pageSize)
-//     .skip(pageSize * (page - 1))
 
 res.json(products)
 })
@@ -63,7 +57,6 @@ const createProduct = asyncHandler(async (req, res) => {
     price: 0,
     user: req.user._id,
     image: '/images/sample.jpg',
-    brand: 'Sample brand',
     category: 'Sample category',
     countInStock: 0,
     numReviews: 0,
@@ -83,7 +76,6 @@ const updateProduct = asyncHandler(async (req, res) => {
     price,
     description,
     image,
-    brand,
     category,
     countInStock,
   } = req.body
@@ -95,7 +87,6 @@ const updateProduct = asyncHandler(async (req, res) => {
     product.price = price
     product.description = description
     product.image = image
-    product.brand = brand
     product.category = category
     product.countInStock = countInStock
 

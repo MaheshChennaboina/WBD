@@ -20,6 +20,10 @@ const ShippingScreen = ({ history }) => {
     e.preventDefault()
      dispatch(saveShippingAddress({ address, city, postalCode, country }))
     history.push('/payment')
+    setAddress("")
+     setCity("")
+     setPostalCode("")
+     setPostalCode("")
   }
 
   return (
